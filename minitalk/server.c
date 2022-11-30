@@ -28,8 +28,8 @@ void ft_handler(int signal, siginfo_t *info, void *context)
 	{
 		write(1, &c, 1);
 		bits = 0;
-		c = 0b11111111;
 	}
+	c <<= 1;
 }
 
 int main(void)
